@@ -65,7 +65,7 @@
 /* mise en forme du body */
 
 body {
-    background-image: url("../Illustrations + Logo/All Pages/arrière_plan.png");
+    background-image: url("../Illustrations + Logo/arrière_plan.png");
     background-size: cover;
     background-repeat: no-repeat;
     overflow-x: hidden;
@@ -104,7 +104,7 @@ nav ul li a {
     text-decoration: none;
     color: var(--white);
     font-family: "Beyno", sans-serif, serif;
-    padding: 10px 0px;
+    padding: 20px 10px;
 }
 
 nav ul li a:hover {
@@ -152,7 +152,7 @@ a {
 /* style du footer */
 
 footer {
-    background-image: url("../Illustrations + Logo/All pages/back_footer.png");
+    background-image: url("../Illustrations + Logo/back_footer.png");
     background-size: cover;
     background-repeat: no-repeat;
     height: 692px;
@@ -251,13 +251,13 @@ footer h3 {
     background-color: var(--white);
 }
 
-.file1 {
+.line1 {
     border-left: 5px solid var(--purplegrey);
     height: 400px;
     display: inline-block;
 }
 
-.file2 {
+.line2 {
     border-left: 5px solid var(--purplegrey);
     height: 250px;
     display: inline-block;
@@ -267,7 +267,7 @@ footer h3 {
 /* design de la section intro */
 
 #intro {
-    background-image: url("../Illustrations + Logo/Accueil/Pantherhome1..png");
+    background-image: url("../Illustrations + Logo/1_Landing_page/Pantherhome1..png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 300px;
@@ -367,7 +367,7 @@ img[alt="black"] {
 /* design de la section contact */
 
 #contact {
-    background-image: url("../Illustrations + Logo/Accueil/Pantherhome7.png");
+    background-image: url("../Illustrations + Logo/1_Landing_page/Pantherhome4.png");
     background-size: cover;
     background-repeat: no-repeat;
     height: 1000px;
@@ -434,7 +434,7 @@ img[alt="black"] {
 /* design de la section forever */
 
 #forever {
-    background-image: url("../Illustrations + Logo/Wakanda/Pantherwakanda1.png");
+    background-image: url("../Illustrations + Logo/2_Wakanda_page/Pantherwakanda1.png");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -463,7 +463,7 @@ img[alt="black"] {
 /* design de la section story wakanda */
 
 #story-wakanda {
-    background-image: url("../Illustrations + Logo/Wakanda/Pantherwakanda2.png");
+    background-image: url("../Illustrations + Logo/2_Wakanda_page/Pantherwakanda2.png");
     background-repeat: no-repeat;
     background-size: auto;
     background-position: -100px -200px;
@@ -477,11 +477,11 @@ img[alt="black"] {
 /* design de la section dora */
 
 #dora {
-    background-image: url("../Illustrations + Logo/Enigme/Pantherenigme1.png");
+    background-image: url("../Illustrations + Logo/3_Page_Enigme/Pantherenigme1.png");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    top: -250px;
+    top: -30px;
     left: -250px;
     height: 170vh;
 }
@@ -504,10 +504,16 @@ img[alt="black"] {
     width: 100%;
 }
 
-.dora img {
+.dora img[alt="circle"] {
     position: relative;
-    top: -150px;
+    top: -200px;
     left: -50px;
+}
+
+.dora img[alt="separator"] {
+    position: relative;
+    top: -400px;
+    left: 250px;
 }
 
 
