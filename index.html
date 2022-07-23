@@ -26,6 +26,9 @@
     <!-- MAIN -->
     <main>
 
+        <!-- CANVAS -->
+        <canvas id="canvas" width="400" height="400" style="border: 1px solid black;"></canvas>
+
         <!-- SOCIAL FIXE -->
         <div class="fixed">
             <div>
@@ -33,10 +36,17 @@
             </div>
             <div>
                 <span class="line2"></span>
-                <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html"><img src="./Illustrations + Logo/All pages/icon_facebook.png" alt="iconfb"></a>
-                <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html"><img src="./Illustrations + Logo/All pages/icon_instagram.png" alt="iconig"></a>
-                <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html"><img src="./Illustrations + Logo/All pages/icon_tiktok.png" alt="icontk"></a>
-                <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html"><img src="./Illustrations + Logo/All pages/icon_twitter.png" alt="icontw"></a>
+                <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html"><img src="./Illustrations + Logo/icon_facebook.png" alt="iconfb"></a>
+                <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html"><img src="./Illustrations + Logo/icon_instagram.png" alt="iconig"></a>
+                <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html"><img src="./Illustrations + Logo/icon_tik_tok.png" alt="icontk"></a>
+                <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html"><img src="./Illustrations + Logo/icon_twitter.png" alt="icontw"></a>
+            </div>
+        </div>
+
+        <!-- POPUPBOX -->
+        <div id="popup">
+            <div id="msgpopup">
+                <h3>votre message a bien ete enregistrer</h3>
             </div>
         </div>
 
@@ -49,7 +59,7 @@
                     tout une génération, “c’est 100% africain et c’est parfait”.
                 </p>
                 <p>
-                    <a href="">Voir plus ></a>
+                    <a href="#prince">Voir plus ></a>
                 </p>
             </div>
         </section>
@@ -57,27 +67,30 @@
         <!-- PERSONNAGES -->
         <section id="figure">
             <div class="figure">
-                <div>
-                    <img src="./Illustrations + Logo/1_Landing_page/Pantherhome_slider_1.png" alt="killmonger">
+                <div id="f1">
+                    <img src="./Illustrations + Logo/1_Landing_page/Pantherhome_slider_1.png" alt="killmonger" id="imgf1">
                 </div>
-                <div>
-                    <h2>KILLMONGER</h2>
-                    <p>La sauvagerie de N'Jadaka alors qu'il servait dans une unité d'opérations noires de l'armée américaine lui a valu le surnom de Killmonger. D’origine Wakandaise, et se sentant abandoné par sa nation, il cherche à détroner T’Challa dans
+                <div id="description">
+                    <h2 id="nom1">KILLMONGER</h2>
+                    <p id="descrip1">La sauvagerie de N'Jadaka alors qu'il servait dans une unité d'opérations noires de l'armée américaine lui a valu le surnom de Killmonger. D’origine Wakandaise, et se sentant abandoné par sa nation, il cherche à détroner T’Challa dans
                         une quête vers le pourvoir.
                     </p>
                     <p><a href="">Voir plus ></a></p>
                 </div>
-                <div>
-                    <img src="./Illustrations + Logo/1_Landing_page/Pantherhome_slider_2.png" alt="okoye">
+                <div id="f2">
+                    <img src="./Illustrations + Logo/1_Landing_page/Pantherhome_slider_2.png" alt="okoye" id="imgf2">
                 </div>
-                <div>
-                    <h2>OKOYE</h2>
-                    <p>Okoye est le général des Dora Milaje (groupe d’élite de femmes guerrières) et le chef des forces armées et des renseignements wakandais. Témoin du couronnement de T'Challa, elle se joint à lui dans de nombreuses aventures.
+                <div id="description">
+                    <h2 id="nom2">OKOYE</h2>
+                    <p id="descrip2">Okoye est le général des Dora Milaje (groupe d’élite de femmes guerrières) et le chef des forces armées et des renseignements wakandais. Témoin du couronnement de T'Challa, elle se joint à lui dans de nombreuses aventures.
                     </p>
                     <p><a href="">Voir plus ></a></p>
                 </div>
-                <div>
+                <!-- <div>
                     <img src="./Illustrations + Logo/1_Landing_page/Pantherhome_slider_3.png" alt="shury">
+                </div> -->
+                <div id="next">
+                    <p>></p>
                 </div>
             </div>
         </section>
@@ -134,7 +147,7 @@
                         </div>
                     </div>
                     <div style="width: 50%; margin-left: 15px;">
-                        <img src="./Illustrations + Logo/1_Landing_page/Pantherhome3.png" alt="t'challa">
+                        <img src="./Illustrations + Logo/1_Landing_page/Pantherhome3.png" alt="t'challa" class="t'challa">
                         <div class="card">
                             <h3>T’Challa</h3>
                             <p>
@@ -162,7 +175,8 @@
                 <div class="form">
                     <p>Besoin de l’intervention du Wakanda ?</p>
                     <h3>Contactez nous !</h3>
-                    <form>
+                    <p id="error" style="color: red;"></p>
+                    <form id="myform">
                         <p><input type="text" name="nom" placeholder="Nom"></p>
                         <p><input type="email" name="mail" placeholder="Email"></p>
                         <p><textarea name="message" placeholder="Message" rows="10"></textarea></p>
@@ -208,6 +222,10 @@
         </div>
     </footer>
 
+    <!-- SCRIPT -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/global.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
